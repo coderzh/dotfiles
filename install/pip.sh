@@ -12,7 +12,7 @@ main() {
 
     for i in "${PIP_PACKAGES[@]}"; do
         execute \
-            "sudo -H pip install $i" \
+            "python3 -m pip install $i" \
             "install $i"
     done
 
