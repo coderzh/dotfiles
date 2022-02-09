@@ -50,3 +50,8 @@ Session.vim
 Desktop.ini
 ehthumbs.db
 Thumbs.db
+
+.idea
+*.pyc
+dist
+compile_commands.json

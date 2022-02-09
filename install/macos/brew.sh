@@ -19,7 +19,6 @@ brew upgrade
 
 # Install packages
 apps=(
-#    caskroom/cask/brew-cask
     cmake
     coreutils
     findutils
@@ -27,8 +26,6 @@ apps=(
     gnu-sed --with-default-names
     go
     hugo
-    mercurial
-    mysql
     python
     ruby
     svn

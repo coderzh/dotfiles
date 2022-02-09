@@ -1,7 +1,9 @@
 [core]
-	autocrlf = false
-	editor = vim
+    autocrlf = false
+    editor = vim
+    quotepath = false
+    precomposeUnicode = true
 [push]
-	default = simple
+    default = simple
 [include]
     path = ~/.gitconfig.local

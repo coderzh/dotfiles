@@ -15,6 +15,6 @@ copy_files_to_home "${MACOS_FILES_COPY_TO_HOME[@]}"
 print_in_purple "\n • Brew\n\n"
 ./brew.sh
 
-print_in_purple "\n • Atom\n\n"
-./apm.sh
+# print_in_purple "\n • Atom\n\n"
+# ./apm.sh
 

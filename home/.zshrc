@@ -12,19 +12,18 @@ ZSH_THEME="robbyrussell"
 
 # Uncomment the following line to use hyphen-insensitive completion. Case
 # sensitive completion must be off. _ and - will be interchangeable.
-# HYPHEN_INSENSITIVE="true"
-
+# HYPHEN_INSENSITIVE="true" 
 # Uncomment the following line to disable bi-weekly auto-update checks.
-# DISABLE_AUTO_UPDATE="true"
+DISABLE_AUTO_UPDATE="true"
 
 # Uncomment the following line to change how often to auto-update (in days).
-# export UPDATE_ZSH_DAYS=13
+export UPDATE_ZSH_DAYS=20
 
 # Uncomment the following line to disable colors in ls.
 # DISABLE_LS_COLORS="true"
 
 # Uncomment the following line to disable auto-setting terminal title.
-# DISABLE_AUTO_TITLE="true"
+DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
 # ENABLE_CORRECTION="true"
@@ -49,7 +48,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git extract z python pip ruby rails adb gem go vagrant)
+plugins=(git extract z python pip adb gem brew zsh-autosuggestions)
 
 # User configuration
 
@@ -85,6 +84,8 @@ source $ZSH/oh-my-zsh.sh
 
 alias git="LC_ALL=en_US git"
 alias gsup="git submodule foreach git pull --rebase origin master"
+alias python="python3"
+alias pip="python3 -m pip"
 
 ff() { find . -type f -iname "*$1*";}
 fd() { find . -type d -iname "*$1*";}
