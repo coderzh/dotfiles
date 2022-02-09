@@ -13,7 +13,6 @@ if test ! $(which brew); then
   ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 fi
 
-brew tap homebrew/versions
 brew update
 brew upgrade
 
@@ -23,7 +22,6 @@ apps=(
     coreutils
     findutils
     git
-    gnu-sed --with-default-names
     go
     hugo
     python
