@@ -43,6 +43,9 @@ defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
 
 defaults write -g ApplePressAndHoldEnabled -bool false
 
+# set time format
+defaults write com.apple.menuextra.clock "DateFormat" "EEE MMM d  H:mm"
+
 ###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
