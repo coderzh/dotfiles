@@ -3,6 +3,7 @@
     editor = vim
     quotepath = false
     precomposeUnicode = true
+    excludesfile = ~/.gitignore
 [push]
     default = simple
 [include]
