@@ -8,9 +8,9 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 "./$(get_os)/main.sh"
 
 ./oh-my-zsh.sh
-./npm.sh
+# ./npm.sh
 ./vim.sh
-./pip.sh
+# ./pip.sh
 
 cd ..
 exec zsh -l
