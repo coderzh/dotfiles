@@ -12,3 +12,5 @@ cd "$(dirname "${BASH_SOURCE[0]}")" \
 ./vim.sh
 ./pip.sh
 
+cd ..
+exec zsh -l

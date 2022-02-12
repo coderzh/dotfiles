@@ -1,5 +1,50 @@
 #!/bin/bash
 
+download() {
+
+    local url="$1"
+    local output="$2"
+
+    if command -v "wget" &> /dev/null; then
+
+        wget -qO "$output" "$url" &> /dev/null
+        #     │└─ write output to file
+        #     └─ don't show output
+
+        return $?
+    elif command -v "curl" &> /dev/null; then
+
+        curl -LsSo "$output" "$url" &> /dev/null
+        #     │││└─ write output to file
+        #     ││└─ show error messages
+        #     │└─ don't show the progress meter
+        #     └─ follow redirects
+
+        return $?
+
+    fi
+
+    return 1
+
+}
+
+download_and_execute_file() {
+
+    local tmpFile=""
+
+    tmpFile="$(mktemp /tmp/XXXXX)"
+
+    download "$1" "$tmpFile" \
+        && . "$tmpFile" \
+        && rm -rf "$tmpFile" \
+        && return 0
+
+   return 1
+
+}
+
+
+
 answer_is_yes() {
     [[ "$REPLY" =~ ^[Yy]$ ]] \
         && return 0 \

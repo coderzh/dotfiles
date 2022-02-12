@@ -12,11 +12,21 @@ main() {
         "Set zsh as default"
 
     if [ ! -d $HOME/.oh-my-zsh ]; then
+        local tmpFile=""
+        tmpFile="$(mktemp /tmp/XXXXX)"
+        download "https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh" "$tmpFile"
+        execute \
+            "sh $tmpFile" \
+            "Install oh-my-zsh"
+        rm -rf "$tmpFile"
 
         execute \
-            "sh -c \"$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\"" \
-            "Install oh-my-zsh"
+            "git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions" \
+            "Install zsh-autosuggestions"
       
+        execute \
+            "ln -fs $(pwd)/../home/.zshrc $HOME/.zshrc" \
+            "update .zshrc"
     fi
 }
 
