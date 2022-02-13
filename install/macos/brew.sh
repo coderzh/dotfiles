@@ -47,7 +47,6 @@ caskapps=(
     visual-studio-code
     tencent-lemon
     keepassx
-    dropbox
     shadowsocksx-ng
     kindle
     pomotodo
@@ -57,6 +56,9 @@ caskapps=(
     jietu
     thunder
     iina
+
+    # dropbox
+
     ### for android develop
     # android-studio
     # pycharm-ce
