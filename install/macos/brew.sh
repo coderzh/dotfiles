@@ -54,6 +54,7 @@ caskapps=(
     wechat
     qq
     qqmusic
+    jietu
     thunder
     iina
     ### for android develop
