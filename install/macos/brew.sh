@@ -23,11 +23,12 @@ apps=(
     findutils
     git
     go
+    java
+    node
     hugo
     python
     ruby
     svn
-    vim
     wget
     zsh
     htop
@@ -36,37 +37,32 @@ apps=(
 )
 
 brew install "${apps[@]}"
-brew cleanup
 
 caskapps=(
-    android-studio
     alfred
-    atom
-    cheatsheet
-    dash
-    genymotion
-    google-chrome
-    intellij-idea-ce
     iterm2
-    java
-    karabiner
+    sogouinput
+    google-chrome
+    macvim
+    visual-studio-code
+    tencent-lemon
     keepassx
+    dropbox
+    shadowsocksx-ng
     kindle
     pomotodo
-    pycharm-ce
+    wechat
     qq
     qqmusic
-    qqmacmgr
-    sogouinput
     thunder
-    vagrant
-    virtualbox
-    vlc
-    youdao
+    iina
+    ### for android develop
+    # android-studio
+    # pycharm-ce
 )
 
-# brew tap caskroom/versions
-# brew cask update
-# brew cask install --appdir="/Applications" "${caskapps[@]}"
-# brew cask cleanup
+brew install --cask "${caskapps[@]}"
 
+brew cleanup
+
+open /Applications/Alfred*.app
