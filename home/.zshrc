@@ -82,7 +82,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias git="LC_ALL=en_US git"
+# alias git="LC_ALL=en_US git"
 alias gsup="git submodule foreach git pull --rebase origin master"
 alias python="python3"
 alias pip="python3 -m pip"
