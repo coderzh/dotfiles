@@ -23,7 +23,6 @@ apps=(
     findutils
     git
     go
-    java
     node
     hugo
     python
