@@ -52,6 +52,7 @@ ehthumbs.db
 Thumbs.db
 
 .idea
+.cache
 *.pyc
 dist
 compile_commands.json
