@@ -97,3 +97,10 @@ if [ -r ~/.zshrc.local ]; then
 fi
 
 
+DISABLE_AUTO_TITLE="true"
+
+precmd() {
+  # sets the tab title to current dir
+  echo -ne "\e]1;${PWD##*/}\a"
+}
+
