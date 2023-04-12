@@ -1,7 +1,7 @@
 filetype off
 
 colo desert
-set guifont=Menlo\ Regular\ for\ Powerline:h14
+set guifont=Menlo:h14
 execute pathogen#infect('pathogen/{}') 
 set nobackup
 set noswapfile
@@ -88,12 +88,12 @@ Plugin 'fatih/vim-go'
 Plugin 'moll/vim-node'
 Plugin 'mileszs/ack.vim'
 Plugin 'dyng/ctrlsf.vim'
-Plugin 'SirVer/ultisnips'
+" Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 Plugin 'scrooloose/nerdtree'
 "Plugin 'Valloric/YouCompleteMe'
 Plugin 'derekwyatt/vim-fswitch'
-Plugin 'jistr/vim-nerdtree-tabs'
+"Plugin 'jistr/vim-nerdtree-tabs'
 Plugin 'pangloss/vim-javascript'
 Plugin 'scrooloose/nerdcommenter'
 "Plugin 'fholgado/minibufexpl.vim'
@@ -224,8 +224,8 @@ nnoremap <Leader>0 :10b<CR>
 " 使用 ctrlsf.vim 插件在工程内全局查找光标所在关键字
 nnoremap <Leader>sf :CtrlSF<CR>
 
-set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
-set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim
+" set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
+" set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim
 
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'

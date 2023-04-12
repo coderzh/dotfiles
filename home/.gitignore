@@ -56,3 +56,4 @@ Thumbs.db
 *.pyc
 dist
 compile_commands.json
+xcuserdata
