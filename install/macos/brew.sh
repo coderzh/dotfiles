@@ -24,7 +24,6 @@ apps=(
     git
     go
     node
-    hugo
     python
     ruby
     svn
@@ -63,8 +62,8 @@ caskapps=(
     # pycharm-ce
 )
 
-brew install --cask "${caskapps[@]}"
+# brew install --cask "${caskapps[@]}"
 
 brew cleanup
 
-open /Applications/Alfred*.app
+# open /Applications/Alfred*.app

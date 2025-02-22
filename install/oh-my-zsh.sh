@@ -7,11 +7,12 @@ main() {
 
     print_in_purple "\n • Oh-My-Zsh\n\n"
 
-    execute \
-        "sudo chsh -s $(which zsh)" \
-        "Set zsh as default"
-
     if [ ! -d $HOME/.oh-my-zsh ]; then
+
+        execute \
+            "sudo chsh -s $(which zsh)" \
+            "Set zsh as default"
+
         local tmpFile=""
         tmpFile="$(mktemp /tmp/XXXXX)"
         download "https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh" "$tmpFile"
